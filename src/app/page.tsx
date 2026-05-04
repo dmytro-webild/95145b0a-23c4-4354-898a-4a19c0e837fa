@@ -113,6 +113,7 @@ export default function LandingPage() {
       description="Baku, White City, 1st Green Island Street\n\nOperating Hours:\nMon–Sat: 07:00–02:00\nSun: 09:00–00:00\n\nPhone/WhatsApp: +994 50 388 35 88\nInstagram: @beduscoffee"
       buttons={[{ text: "Get Directions", href: "#" }, { text: "Follow Us", href: "#" }]}
       background={{ variant: "plain" }}
+      useInvertedBackground={false}
     />
   </div>
 
