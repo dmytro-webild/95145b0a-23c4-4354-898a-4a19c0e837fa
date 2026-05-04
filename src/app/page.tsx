@@ -157,7 +157,4 @@ export default function LandingPage() {
       </ReactLenis>
     </ThemeProvider>
   );
-}"
-    }
-  ]
 }
