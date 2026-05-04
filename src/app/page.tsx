@@ -108,6 +108,7 @@ export default function LandingPage() {
       <ContactText
         text="Experience the warmth of Bedu's at Baku, White City, 1st Green Island Street. We look forward to welcoming you."
         background={{ variant: "plain" }}
+        useInvertedBackground={false}
       />
       <div className="bg-card p-8 rounded-2xl mt-4 grid md:grid-cols-3 gap-6">
         <div className="flex flex-col items-center gap-2">
