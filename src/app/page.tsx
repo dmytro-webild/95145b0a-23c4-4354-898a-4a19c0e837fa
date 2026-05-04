@@ -105,15 +105,17 @@ export default function LandingPage() {
   </div>
 
   <div id="map" data-section="map">
-      <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.043886550993!2d49.8510000!3d40.3800000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDIyJzQ4LjAiTiA0OcKwNTEnMDMuNiJF!5e0!3m2!1sen!2saz!4v1700000000000!5m2!1sen!2saz" 
-        width="100%" 
-        height="450" 
-        style={{ border: 0, width: "100%", display: "block" }} 
-        allowFullScreen 
-        loading="lazy" 
-        referrerPolicy="no-referrer-when-downgrade" 
-      />
+      <div style={{ width: "100%", height: "450px" }}>
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1519.5!2d49.8915833!3d40.3799444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2saz!4v1700000000000!5m2!1sen!2saz" 
+            width="100%" 
+            height="450" 
+            style={{ border: 0, width: "100%", height: "100%" }} 
+            allowFullScreen 
+            loading="lazy" 
+            referrerPolicy="no-referrer-when-downgrade" 
+        />
+      </div>
   </div>
 
   <div id="contact" data-section="contact">
@@ -155,4 +157,8 @@ export default function LandingPage() {
       </ReactLenis>
     </ThemeProvider>
   );
+}"
+    }
+  ],
+  "rawPlan": "I have added the requested map section displaying the location at the provided coordinates with the specified dimensions to help customers easily find your coffee shop."
 }
