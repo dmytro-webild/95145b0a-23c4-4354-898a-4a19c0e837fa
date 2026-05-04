@@ -2,17 +2,16 @@
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
-import ContactCTA from '@/components/sections/contact/ContactCTA';
+import ContactSplit from '@/components/sections/contact/ContactSplit';
 import FaqSplitMedia from '@/components/sections/faq/FaqSplitMedia';
 import FeatureCardNineteen from '@/components/sections/feature/FeatureCardNineteen';
 import FooterCard from '@/components/sections/footer/FooterCard';
 import HeroSplitDoubleCarousel from '@/components/sections/hero/HeroSplitDoubleCarousel';
 import NavbarStyleCentered from '@/components/navbar/NavbarStyleCentered/NavbarStyleCentered';
 import ProductCardTwo from '@/components/sections/product/ProductCardTwo';
-import SocialProofOne from '@/components/sections/socialProof/SocialProofOne';
 import TestimonialCardFifteen from '@/components/sections/testimonial/TestimonialCardFifteen';
 import TextSplitAbout from '@/components/sections/about/TextSplitAbout';
-import { MapPin, Clock, Phone, Instagram } from "lucide-react";
+import { MapPin, Clock, Phone, MessageSquare, Instagram } from "lucide-react";
 
 export default function LandingPage() {
   return (
@@ -107,14 +106,35 @@ export default function LandingPage() {
   </div>
 
   <div id="contact" data-section="contact">
-      <ContactCTA
-      tag="Location & Info"
+      <ContactSplit
+      tag="Contact Us"
       title="Visit Us in Baku"
-      description="Baku, White City, 1st Green Island Street\n\nOperating Hours:\nMon–Sat: 07:00–02:00\nSun: 09:00–00:00\n\nPhone/WhatsApp: +994 50 388 35 88\nInstagram: @beduscoffee"
-      buttons={[{ text: "Get Directions", href: "#" }, { text: "Follow Us", href: "#" }]}
+      description="Experience the warmth of Bedu's at Baku, White City, 1st Green Island Street. We look forward to welcoming you."
       background={{ variant: "plain" }}
       useInvertedBackground={false}
+      imageSrc="https://maps.googleapis.com/maps/api/staticmap?center=Baku,White+City&zoom=15&size=600x400&markers=Baku,White+City"
     />
+    <div className="bg-card p-8 rounded-2xl mt-4 grid md:grid-cols-3 gap-6">
+        <div className="flex flex-col items-center gap-2">
+            <Phone className="text-primary-cta" />
+            <a href="tel:+994503883588" className="font-bold">+994 50 388 35 88</a>
+        </div>
+        <div className="flex flex-col items-center gap-2">
+            <MessageSquare className="text-primary-cta" />
+            <a href="https://wa.me/994503883588" className="font-bold">WhatsApp Support</a>
+        </div>
+        <div className="flex flex-col items-center gap-2">
+            <Instagram className="text-primary-cta" />
+            <a href="https://instagram.com/beduscoffee" className="font-bold">@beduscoffee</a>
+        </div>
+    </div>
+    <div className="bg-card p-8 rounded-2xl mt-4">
+        <h3 className="font-bold mb-4 flex items-center gap-2"><Clock /> Operating Hours</h3>
+        <div className="grid md:grid-cols-2 gap-4">
+            <p>Mon–Sat: 07:00–02:00</p>
+            <p>Sun: 09:00–00:00</p>
+        </div>
+    </div>
   </div>
 
   <div id="footer" data-section="footer">
