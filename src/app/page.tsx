@@ -10,7 +10,7 @@ import HeroSplitDoubleCarousel from '@/components/sections/hero/HeroSplitDoubleC
 import NavbarStyleCentered from '@/components/navbar/NavbarStyleCentered/NavbarStyleCentered';
 import ProductCardTwo from '@/components/sections/product/ProductCardTwo';
 import SocialProofOne from '@/components/sections/socialProof/SocialProofOne';
-import TestimonialCardTwo from '@/components/sections/testimonial/TestimonialCardTwo';
+import TestimonialCardOne from '@/components/sections/testimonial/TestimonialCardOne';
 import TextSplitAbout from '@/components/sections/about/TextSplitAbout';
 
 export default function LandingPage() {
@@ -168,21 +168,18 @@ export default function LandingPage() {
   </div>
 
   <div id="testimonials" data-section="testimonials">
-      <TestimonialCardTwo
-      animationType="slide-up"
+      <TestimonialCardOne
+      animationType="blur-reveal"
+      gridVariant="asymmetric-60-wide-40-narrow"
       textboxLayout="default"
       useInvertedBackground={false}
       testimonials={[
         {
-          id: "1",          name: "Leyla M.",          role: "Local Professional",          testimonial: "The best atmosphere in Baku. Felt like home.",          imageSrc: "http://img.b2bpic.net/free-photo/cropped-shot-good-looking-cheerful-african-american-female-holds-cup-coffee-has-lunch-cozy-cafeteria-rests-after-excursion-recreats-resort-country_273609-3409.jpg"},
+          id: "1",          name: "Leyla M.",          role: "Local Professional",          company: "Baku Arts",          rating: 5,          imageSrc: "http://img.b2bpic.net/free-photo/cropped-shot-good-looking-cheerful-african-american-female-holds-cup-coffee-has-lunch-cozy-cafeteria-rests-after-excursion-recreats-resort-country_273609-3409.jpg"},
         {
-          id: "2",          name: "Ahmed K.",          role: "Food Enthusiast",          testimonial: "Authentic flavors that remind me of home.",          imageSrc: "http://img.b2bpic.net/free-photo/portrait-smiling-asian-girl-barista-giving-out-order-cafe-inviting-guest-pick-up-takeaway-o_1258-130468.jpg"},
+          id: "2",          name: "Ahmed K.",          role: "Food Enthusiast",          company: "Local Guide",          rating: 5,          imageSrc: "http://img.b2bpic.net/free-photo/portrait-smiling-asian-girl-barista-giving-out-order-cafe-inviting-guest-pick-up-takeaway-o_1258-130468.jpg"},
         {
-          id: "3",          name: "Sarah W.",          role: "Tourist",          testimonial: "A beautiful cultural escape. The coffee is unmatched.",          imageSrc: "http://img.b2bpic.net/free-photo/side-view-smiley-business-owner_23-2149434493.jpg"},
-        {
-          id: "4",          name: "Rashid F.",          role: "Family Guest",          testimonial: "Perfect place for our family weekends.",          imageSrc: "http://img.b2bpic.net/free-photo/positive-pleasant-looking-woman-with-blonde-hair-holds-disposable-cup-coffee-enjoys-drinking-hot-beverage-cold-winter-weather-dressed-knitted-grey-sweater_273609-46817.jpg"},
-        {
-          id: "5",          name: "Elena V.",          role: "Expat",          testimonial: "Bedu's is where I go for genuine peace.",          imageSrc: "http://img.b2bpic.net/free-photo/enthusiastic-young-asian-woman-barista-apron-looking-amazed-clap-hands-smiling-standing_1258-199222.jpg"},
+          id: "3",          name: "Sarah W.",          role: "Tourist",          company: "Global Travel",          rating: 5,          imageSrc: "http://img.b2bpic.net/free-photo/side-view-smiley-business-owner_23-2149434493.jpg"},
       ]}
       title="Heartfelt Reviews"
       description="What our guests say about their Bedu's experience."
