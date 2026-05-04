@@ -121,7 +121,7 @@ export default function LandingPage() {
         </div>
         <div className="flex flex-col items-center gap-2">
             <Instagram className="text-primary-cta" />
-            <a href="https://www.instagram.com/beduscoffee/" target="_blank" rel="noopener noreferrer" className="font-bold">@beduscoffee</a>
+            <a href="https://www.instagram.com/beduscoffee/" target="_blank" rel="noopener noreferrer" className="font-bold underline">@beduscoffee</a>
         </div>
       </div>
       <div className="bg-card p-8 rounded-2xl mt-4">
