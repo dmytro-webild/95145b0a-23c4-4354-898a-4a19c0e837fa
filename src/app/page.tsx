@@ -4,13 +4,13 @@ import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
 import ContactText from '@/components/sections/contact/ContactText';
 import FeatureCardNineteen from '@/components/sections/feature/FeatureCardNineteen';
-import FooterCard from '@/components/sections/footer/FooterCard';
+import FooterBaseReveal from '@/components/sections/footer/FooterBaseReveal';
 import HeroSplitDoubleCarousel from '@/components/sections/hero/HeroSplitDoubleCarousel';
 import NavbarStyleCentered from '@/components/navbar/NavbarStyleCentered/NavbarStyleCentered';
 import ProductCardTwo from '@/components/sections/product/ProductCardTwo';
 import TestimonialCardFifteen from '@/components/sections/testimonial/TestimonialCardFifteen';
 import TextSplitAbout from '@/components/sections/about/TextSplitAbout';
-import { Clock, Phone, MessageSquare, Instagram } from "lucide-react";
+import { Clock, Phone, MessageSquare, Instagram, Mail, MapPin } from "lucide-react";
 
 export default function LandingPage() {
   return (
@@ -148,9 +148,22 @@ export default function LandingPage() {
   </div>
 
   <div id="footer" data-section="footer">
-      <FooterCard
-      logoSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DE8rCCIae0SlyXkikO90v2SgnL/uploaded-1777877176287-2jg0wefb.png"
+      <FooterBaseReveal
       logoText="BEDU'S"
+      columns={[
+        {
+            title: "Menu",            items: [
+                { label: "Specialty Coffee", href: "#products" },
+                { label: "Authentic Bites", href: "#products" }
+            ]
+        },
+        {
+            title: "Social",            items: [
+                { label: "Instagram", href: "https://www.instagram.com/beduscoffee/" },
+                { label: "WhatsApp", href: "https://wa.me/994503883588" }
+            ]
+        }
+      ]}
       copyrightText="© 2026 BEDU’S. All rights reserved."
     />
   </div>
