@@ -159,6 +159,5 @@ export default function LandingPage() {
   );
 }"
     }
-  ],
-  "rawPlan": "I have added the requested map section displaying the location at the provided coordinates with the specified dimensions to help customers easily find your coffee shop."
+  ]
 }
